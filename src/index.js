@@ -185,8 +185,8 @@ app.get("/balance", verifyIfExistsAccountCPF, (request, response) =>{
 
     const balance = getBalance(customer.statement);
 
-    return response,json(balance);
-} )
+    return response.json(balance);
+});
 
 app.listen(3333);
 
